@@ -1,0 +1,204 @@
+.photos {
+
+	overflow: hidden;      
+	text-align: center;
+}
+.photos a {
+	display: block;
+	width: 25%;
+	float: left;
+	position: relative;    
+	line-height: 0;
+}
+.photos a:after {
+	content: "";
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.photos a:hover:after {
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	display: block;
+	width: 100%;
+	height: 100%;    
+	background: transparent;
+	background-image: linear-gradient(to left, #11de93, #0e7ad6); 
+	opacity: 0.8;    
+}
+.photos a:before {
+	content: "";
+	opacity: 0;    
+	transition: opacity 0.5s;
+}
+.photos a:hover:before {
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	top: 50%;
+	left: 50%;  
+	margin: -26px 0 0 -26px;
+	z-index: 100;    
+	background: url(https://snipp.ru/img/plus.png) 0 0 no-repeat;
+	opacity: 1;
+}
+
+.photos img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main
+{
+	padding-top: 200px;
+	height: 3000px;
+}
+
+.header {
+    background-color: #141414;
+
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    color: #cbb780;
+
+    z-index: 11;
+}
+
+.header>.container {
+    height: 50px;
+}
+
+.back {
+    text-decoration: none;
+    color: #cbb780;
+
+    position: relative;
+    top: 35%;
+    left: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+
+    z-index: 12;
+}
+
+.logo-name {
+    position: relative;
+    top: 20%;
+    text-align: center;
+
+    font-family: 'Playfair';
+    font-size: 24px;
+}
+
+sup {
+    font-size: 18px;
+}
+
+.header.active {
+    background-color: #141414;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.collection-menu>.text {
+    font-family: 'Montserrat';
+    font-size: 34px;
+    color: #141414;
+}
+
+.horizontal-line {
+    display: block;
+    border-bottom: 1px solid #cbb780;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.helper-menu {
+    display: block;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 34px;
+    color: #141414;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.helper-menu:hover {
+    color: #cbb780;
+}
+
+.open-sidebar {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    border: none;
+    background-color: transparent;
+    color: #cbb780;
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+.close-sidebar {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+
+    border: none;
+    background-color: transparent;
+    color: #cbb780;
+    font-size: 34px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+main
+{
+    padding-top: 240px;
+    height: 3000px;
+}
+
+.container
+{
+    max-width: 1170px;
+    margin: 0 auto;
+}

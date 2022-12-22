@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #efefef;
+}
+
+.header {
+    background-color: #141414;
+
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    color: #cbb780;
+
+    z-index: 10;
+}
+
+.header>.container {
+    height: 50px;
+}
+
+.back {
+    text-decoration: none;
+    color: #cbb780;
+
+    position: relative;
+    top: 35%;
+    left: 20px;
+    font-size: 16px;
+    font-family: 'Playfair';
+
+    z-index: 20;
+}
+
+.logo-name {
+    position: relative;
+    top: -20%;
+    text-align: center;
+
+    font-family: 'Playfair';
+    font-size: 24px;
+}
+
+sup {
+    font-size: 18px;
+}
+
+.header.active {
+    background-color: #141414;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.collection-menu>.text {
+    font-family: 'Montserrat';
+    font-size: 34px;
+    color: #141414;
+}
+
+.horizontal-line {
+    display: block;
+    border-bottom: 1px solid #cbb780;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.helper-menu {
+    display: block;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 34px;
+    color: #141414;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.helper-menu:hover {
+    color: #cbb780;
+}
+
+.open-sidebar {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    border: none;
+    background-color: transparent;
+    color: #cbb780;
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+.close-sidebar {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+
+    border: none;
+    background-color: transparent;
+    color: #cbb780;
+    font-size: 34px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.container
+{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.start-text
+{
+    text-align: center;
+    padding-top: 120px;
+    color:#141414;
+    font-size: 42px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+
+
+main > .container > .horizontal-line
+{
+    width: 240px;
+}
+
+.refer-line {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 120px;
+    background-color: white;
+	overflow: hidden;      
+	text-align: center;
+}
+
+.refer-line a {
+    text-decoration: none;
+
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+	display: inline-block;
+	width: 30%;
+
+	position: relative;    
+	line-height: 0;
+}
+
+.refer-line a:after {
+	content: "";
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.refer-line a:hover::after {
+    content: "";
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	display: block;
+	width: 100%;
+	height: 100%;    
+	background: transparent;
+	background-color: #141414;
+	opacity: 0.5; 
+    z-index: 1;   
+}
+
+.refer-line a:before {
+	opacity: 0;    
+	transition: opacity 0.5s;
+}
+
+.refer-line a:hover:before {
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	top: 50%;
+	left: 50%;  
+	margin: -26px 0 0 -26px;
+	z-index: 1;    
+
+	opacity: 1;
+}
+
+.refer-line img {
+	width: 100%;
+	height: auto;
+}
+
+.refer-text
+{
+    font-size: 42px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: 9;
+}
+
+footer
+{
+    width: 100%;
+    height: 400px;
+    background-color: #141414;
+}
+
+.collection-list
+{
+    padding-top: 60px;
+
+    list-style: none;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+footer > ul
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+footer > ul > .helper-menu
+{
+    display: inline-block;
+    padding-right: 30px;
+    text-align: center;
+    color: white;
+}
+
+footer > .horizontal-line
+{
+    width: 360px;
+}
+
+.close-text
+{
+    padding-top: 60px;
+    color: #999999;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: center;
+}

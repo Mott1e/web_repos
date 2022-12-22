@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #efefef;
+}
+
+.header {
+    background-color: #141414;
+
+    position: relative;
+    width: 100%;
+    height: 50px;
+    color: #cbb780;
+
+    z-index: 10;
+}
+
+.back {
+    text-decoration: none;
+    color: #cbb780;
+
+    position: relative;
+    top: 35%;
+    left: 20px;
+    font-size: 16px;
+    font-family: 'Playfair';
+
+    z-index: 11;
+}
+
+.logo-name {
+    position: relative;
+    top: -20%;
+    text-align: center;
+
+    font-family: 'Playfair';
+    font-size: 24px;
+}
+
+sup {
+    font-size: 18px;
+}
+
+
+.container
+{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+.header-text
+{
+    margin-top: 0;
+    padding-top: 60px;
+    font-size: 48px;
+    font-family:'Montserrat';
+    color: #141414;
+}
+
+.text
+{
+    font-size: 20px;
+    font-family:'Montserrat';
+    color: #141414;
+}
+
+.horizontal-line
+{
+    display: block;
+    border-bottom: 1px solid #cbb780;
+    width: 100%;
+    margin: 60px auto;
+}
+
+.collection-title
+{
+    font-family: 'Montserrat';
+    font-size: 28px;
+}
+
+.product-card
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color:#141414;
+    font-family: 'Montserrat';
+
+    margin: 15px auto;
+}
+
+
+.product-refer
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-title
+{
+    margin: 0px;
+    font-size: 24px;
+    width: 500px;
+
+    color:#8f8f8f;
+}
+
+.product-title:hover
+{
+    color:#cbb780;
+}
+
+.product-info
+{
+    width: 700px;
+}
+
+.collection-block
+{
+    padding-bottom: 120px;
+}
+
+footer
+{
+    background-color:#141414;
+    height: 50px;
+}
+
+.copyright
+{
+    margin: 0px;
+    line-height: 50px;
+    text-align: center;
+    color:white;
+}

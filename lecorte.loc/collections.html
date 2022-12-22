@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/collections.css">
+    <title>LE CORTE | Collections</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <a class="back" href="index.php">Главная</a>
+        <div class="container">
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="close-sidebar" onclick="closeNav()">&#215;</a>
+                <div class="collection-menu">
+                    <a href="red-collection.html" class="helper-menu">RED</a>
+                    <div class="horizontal-line"></div>
+                    <a href="white-collection.html" class="helper-menu">WHITE</a>
+                    <div class="horizontal-line"></div>
+                    <a href="rose-collection.html" class="helper-menu">ROSE</a>
+                </div>
+                <div class="horizontal-line"></div>
+                <a class="helper-menu" href="index.php">Главная</a>
+                <a class="helper-menu" href="contacts.html">Контакты</a>
+            </div>
+            <button class="open-sidebar" onclick="openNav()">&#9776;</button>
+
+            <div class="logo-name">LE-CORTE<sup>®</sup></div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="start-text">OUR COLLECTIONS</div>
+            <div class="horizontal-line"></div>
+        </div>
+
+        <div class="refer-line">
+            <a href="red-collection.html">
+                <img src="css/images/collections/red.png">
+                <div class="refer-text">RED</div>
+            </a>
+            <a href="white-collection.html">
+                <img src="css/images/collections/white.png">
+                <div class="refer-text">WHITE</div>
+            </a>
+            <a href="rose-collection.html">
+                <img src="css/images/collections/rose.png">
+                <div class="refer-text">ROSE</div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <a href="red-collection.html" class="helper-menu">RED</a>
+            <a href="white-collection.html" class="helper-menu">WHITE</a>
+            <a href="rose-collection.html" class="helper-menu">ROSE</a>
+        </ul>
+        <div class="horizontal-line"></div>
+        <ul>
+            <a href="index.php" class="helper-menu">Главная</a>
+            <a href="contacts.html" class="helper-menu">Контакты</a>
+        </ul>
+        <div class="close-text">© LE-CORTE</div>
+    </footer>
+
+
+    <script src="js/collection/sidebar.js"></script>
+</body>
+
+</html>
